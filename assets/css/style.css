@@ -153,7 +153,8 @@ header {
 .hero-image img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-  max-width: 460px;
+  max-width: 100%;
+  height: auto;
 }
 
 .products {
@@ -164,4 +165,51 @@ header {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: var(--space-lg);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.products-grid article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.products-grid article img {
+  border-radius: var(--radius-sm);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.products-grid article h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.products-grid article p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.products-grid article a:last-of-type {
+  display: inline-block;
+  background-color: var(--cta);
+  color: var(--header-bg);
+  text-align: center;
+  margin-block-start: auto;
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  inline-size: 100%;
+}
+
+.products-grid article a:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
