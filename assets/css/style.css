@@ -224,6 +224,13 @@ header {
   border-radius: var(--radius-sm);
   font-weight: 600;
   inline-size: 100%;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+.products-grid article a:last-of-type:hover {
+  background-color: #e9772f;
+  transform: translate(-2px);
 }
 
 footer {
