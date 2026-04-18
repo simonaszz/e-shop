@@ -101,6 +101,10 @@ header .wrapper {
   display: block;
 }
 
+.menu-toggle:checked + .header-top-bar .menu-button span:first-child {
+  transform: translateX(6px) rotate(45deg);
+}
+
 .menu-button {
   display: flex;
   flex-direction: column;
