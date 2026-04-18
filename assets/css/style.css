@@ -325,7 +325,6 @@ footer {
 
   .hero .wrapper {
     flex-direction: row;
-    /* align-items: center; */
     gap: var(--space-xl);
   }
 
