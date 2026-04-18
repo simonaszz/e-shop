@@ -129,7 +129,8 @@ header .wrapper {
   left: 0;
   inline-size: 100%;
   background-color: var(--header-bg);
-  padding-block: var(--space-sm);
+  padding-block: var(--space-md);
+  box-shadow: var(--shadow-soft);
 }
 
 .main-nav ul {
@@ -302,6 +303,10 @@ footer {
   }
 
   .main-nav {
+    position: static;
+    inline-size: auto;
+    box-shadow: none;
+    background-color: transparent;
     padding-block: 0;
     display: flex;
     justify-content: center;
