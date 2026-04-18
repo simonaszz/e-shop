@@ -54,6 +54,7 @@
 .buy-button {
   display: inline-block;
   align-self: flex-start;
+  margin-top: auto;
   background-color: var(--cta);
   color: var(--header-bg);
   padding: var(--space-md) var(--space-lg);
@@ -79,6 +80,11 @@
   .product-image,
   .product-content {
     flex: 1;
+  }
+
+  .product-image img {
+    inline-size: 100%;
+    block-size: 100%;
   }
 
   .product-content h1 {
