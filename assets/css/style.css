@@ -146,6 +146,15 @@ header .wrapper {
   font-weight: 600;
   font-size: 16px;
   padding-block: var(--space-sm);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: var(--primary);
+  background-color: var(--page-bg);
+  border-radius: var(--radius-sm);
 }
 
 .hero {
