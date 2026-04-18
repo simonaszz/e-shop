@@ -129,7 +129,8 @@ header .wrapper {
   left: 0;
   inline-size: 100%;
   background-color: var(--header-bg);
-  padding-block: var(--space-md);
+  padding: var(--space-md);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   box-shadow: var(--shadow-soft);
 }
 
