@@ -132,6 +132,10 @@ header .wrapper {
   padding: var(--space-md);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2 ease;
+  transform-origin: center;
 }
 
 .main-nav ul {
