@@ -102,7 +102,15 @@ header .wrapper {
 }
 
 .menu-toggle:checked + .header-top-bar .menu-button span:first-child {
-  transform: translateX(6px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle:checked + .header-top-bar .menu-button span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .header-top-bar .menu-button span:last-child {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .menu-button {
@@ -116,6 +124,7 @@ header .wrapper {
   color: var(--text-main);
   font-size: 16px;
   font-weight: 600;
+  position: relative;
 }
 
 .menu-button span {
@@ -124,6 +133,25 @@ header .wrapper {
   height: 2px;
   background-color: var(--text-main);
   border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  transform-origin: center;
+}
+
+.menu-button span:first-child {
+  top: 0;
+}
+
+.menu-button span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-button span:last-child {
+  bottom: 0;
 }
 
 .main-nav {
