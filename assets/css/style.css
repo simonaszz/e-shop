@@ -166,7 +166,7 @@ header .wrapper {
   box-shadow: var(--shadow-soft);
   transition:
     transform 0.2s ease,
-    opacity 0.2 ease;
+    opacity 0.2s ease;
   transform-origin: center;
 }
 
