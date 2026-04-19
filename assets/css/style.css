@@ -296,6 +296,11 @@ header .wrapper {
   border-radius: inherit;
   border: 1px solid var(--primary);
   opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.products-grid article:hover::after {
+  opacity: 1;
 }
 
 .products-grid article:hover {
