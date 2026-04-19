@@ -52,9 +52,9 @@
 }
 
 .buy-button {
-  display: inline-block;
-  align-self: flex-start;
-  margin-top: auto;
+  display: block;
+  inline-size: 100%;
+  margin-block-start: auto;
   background-color: var(--cta);
   color: var(--header-bg);
   padding: var(--space-md) var(--space-lg);
