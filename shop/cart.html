@@ -10,20 +10,29 @@
   <body>
     <header>
       <div class="wrapper">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
 
         <div class="header-top-bar">
-          <label for="menu-toggle" class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
+          <label
+            for="menu-toggle"
+            class="menu-button"
+            role="button"
+            aria-label="Atidaryti arba uždaryti navigacijos meniu"
+            aria-controls="main-navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </label>
 
-          <a class="logo" href="/shop/products.html">PlayBox</a>
-          <a class="cart-link" href="/shop/cart.html">Krepšelis</a>
+          <a class="logo" href="/shop/products.html" aria-label="PlayBox pradinis puslapis"> PlayBox </a>
+
+          <a class="cart-link" href="/shop/cart.html" aria-label="Atidaryti krepšelį" aria-current="page">
+            Krepšelis
+          </a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav" id="main-navigation" aria-label="Pagrindinė navigacija">
           <ul>
             <li><a href="/shop/products.html">Pagrindinis</a></li>
             <li><a href="/shop/products.html">Žaislai</a></li>
@@ -33,40 +42,40 @@
     </header>
 
     <main>
-      <section class="cart">
+      <section class="cart" aria-labelledby="cart-title">
         <div class="wrapper">
-          <h1>Jūsų krepšelis</h1>
+          <h1 id="cart-title">Jūsų krepšelis</h1>
 
           <div class="cart-layout">
-            <div class="cart-items">
-              <article class="cart-item">
+            <div class="cart-items" aria-label="Krepšelio prekės">
+              <article class="cart-item" aria-labelledby="cart-item-title">
                 <img
                   src="https://iqzaislai.lt/wp-content/uploads/2023/11/T-13-2.jpg.webp"
                   alt="Pop It Pro žaidimų pultelis"
                 />
 
                 <div class="cart-item-content">
-                  <h2>Pop It Pro</h2>
-                  <p class="cart-item-price">7,99 &euro;</p>
-                  <p class="cart-item-quantity">Kiekis: 1</p>
+                  <h2 id="cart-item-title">Pop It Pro</h2>
+                  <p class="cart-item-price" aria-label="Kaina 7 eurai 99 centai">7,99 &euro;</p>
+                  <p class="cart-item-quantity" aria-label="Kiekis 1">Kiekis: 1</p>
                 </div>
               </article>
             </div>
 
-            <aside class="cart-summary">
-              <h2>Užsakymo suvestinė</h2>
+            <aside class="cart-summary" aria-labelledby="summary-title">
+              <h2 id="summary-title">Užsakymo suvestinė</h2>
 
               <div class="summary-row">
                 <span>Prekių kiekis</span>
-                <span>1</span>
+                <span aria-label="1 prekė">1</span>
               </div>
 
               <div class="summary-row summary-total">
                 <span>Bendra suma</span>
-                <span>7,99 &euro;</span>
+                <span aria-label="7 eurai 99 centai">7,99 &euro;</span>
               </div>
 
-              <a class="checkout-button" href="#">Apmokėti</a>
+              <a class="checkout-button" href="#" aria-label="Pereiti prie apmokėjimo"> Apmokėti </a>
             </aside>
           </div>
         </div>
