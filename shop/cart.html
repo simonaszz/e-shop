@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>PlayBox</title>
+    <link rel="stylesheet" href="/assets/css/cart.css" />
+    <title>PlayBox | Krepšelis</title>
   </head>
   <body>
     <header>
@@ -18,17 +19,60 @@
             <span></span>
           </label>
 
-          <a class="logo" href="/index.html">PlayBox</a>
+          <a class="logo" href="/shop/products.html">PlayBox</a>
           <a class="cart-link" href="/shop/cart.html">Krepšelis</a>
         </div>
+
         <nav class="main-nav">
           <ul>
-            <li><a href="/index.html">Pagrindinis</a></li>
+            <li><a href="/shop/products.html">Pagrindinis</a></li>
             <li><a href="/shop/products.html">Žaislai</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="cart">
+        <div class="wrapper">
+          <h1>Jūsų krepšelis</h1>
+
+          <div class="cart-layout">
+            <div class="cart-items">
+              <article class="cart-item">
+                <img
+                  src="https://iqzaislai.lt/wp-content/uploads/2023/11/T-13-2.jpg.webp"
+                  alt="Pop It Pro žaidimų pultelis"
+                />
+
+                <div class="cart-item-content">
+                  <h2>Pop It Pro</h2>
+                  <p class="cart-item-price">7,99 &euro;</p>
+                  <p class="cart-item-quantity">Kiekis: 1</p>
+                </div>
+              </article>
+            </div>
+
+            <aside class="cart-summary">
+              <h2>Užsakymo suvestinė</h2>
+
+              <div class="summary-row">
+                <span>Prekių kiekis</span>
+                <span>1</span>
+              </div>
+
+              <div class="summary-row summary-total">
+                <span>Bendra suma</span>
+                <span>7,99 &euro;</span>
+              </div>
+
+              <a class="checkout-button" href="#">Apmokėti</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div class="wrapper">
         <p>PlayBox</p>
