@@ -22,19 +22,19 @@
 }
 
 .product-content h1 {
-  font-size: 32px;
+  font-size: var(--fs-2xl);
   font-weight: 700;
   line-height: 1.2;
 }
 
 .product-price {
   color: var(--price-color);
-  font-size: 24px;
+  font-size: var(--fs-2xl);
   font-weight: 700;
 }
 
 .product-description {
-  font-size: 16px;
+  font-size: var(--fs-base);
   line-height: 1.6;
 }
 
@@ -98,6 +98,6 @@
 
 @media (min-width: 1024px) {
   .product-content h1 {
-    font-size: 48px;
+    font-size: var(--fs-3xl);
   }
 }
