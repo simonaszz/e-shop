@@ -3,7 +3,7 @@
 }
 
 .cart h1 {
-  font-size: 32px;
+  font-size: var(--fs-2xl);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--space-lg);
@@ -52,12 +52,12 @@
 
 .cart-item-price {
   color: var(--price-color);
-  font-size: 18px;
+  font-size: var(--fs-md);
   font-weight: 700;
 }
 
 .cart-item-quantity {
-  font-size: 16px;
+  font-size: var(--fs-base);
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .cart-summary h2 {
-  font-size: 24px;
+  font-size: var(--fs-xl);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -140,7 +140,7 @@
 
 @media (min-width: 1024px) {
   .cart h1 {
-    font-size: 48px;
+    font-size: var(--fs-3xl);
   }
 
   .cart-item img {
