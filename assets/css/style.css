@@ -285,6 +285,17 @@ header .wrapper {
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+
+  position: relative;
+}
+
+.products-grid article::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid var(--primary);
+  opacity: 0;
 }
 
 .products-grid article:hover {
