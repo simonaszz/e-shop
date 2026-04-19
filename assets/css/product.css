@@ -22,19 +22,19 @@
 }
 
 .product-content h1 {
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-page-title);
   font-weight: 700;
   line-height: 1.2;
 }
 
 .product-price {
   color: var(--price-color);
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-logo-lg);
   font-weight: 700;
 }
 
 .product-description {
-  font-size: var(--fs-base);
+  font-size: var(--fs-body);
   line-height: 1.6;
 }
 
@@ -88,16 +88,16 @@
   }
 
   .product-content h1 {
-    font-size: 40px;
+    font-size: var(--fs-page-title-lg);
   }
 
   .product-price {
-    font-size: 28px;
+    font-size: var(--fs-section-title);
   }
 }
 
 @media (min-width: 1024px) {
   .product-content h1 {
-    font-size: var(--fs-3xl);
+    font-size: var(--fs-page-title-lg);
   }
 }
