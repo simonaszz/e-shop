@@ -10,30 +10,37 @@
   <body>
     <header>
       <div class="wrapper">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
 
         <div class="header-top-bar">
-          <label for="menu-toggle" class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
+          <label
+            for="menu-toggle"
+            class="menu-button"
+            role="button"
+            aria-label="Atidaryti arba uždaryti navigacijos meniu"
+            aria-controls="main-navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </label>
 
-          <a class="logo" href="/shop/products.html">PlayBox</a>
-          <a class="cart-link" href="/shop/cart.html">Krepšelis</a>
+          <a class="logo" href="/shop/products.html" aria-label="PlayBox pradinis puslapis"> PlayBox </a>
+
+          <a class="cart-link" href="/shop/cart.html" aria-label="Atidaryti krepšelį"> Krepšelis </a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav" id="main-navigation" aria-label="Pagrindinė navigacija">
           <ul>
             <li><a href="/shop/products.html">Pagrindinis</a></li>
-            <li><a href="/shop/products.html">Žaislai</a></li>
+            <li><a href="/shop/products.html" aria-current="page">Žaislai</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="product-detail">
+      <section class="product-detail" aria-labelledby="product-title">
         <div class="wrapper">
           <div class="product-image">
             <img
@@ -43,22 +50,23 @@
           </div>
 
           <div class="product-content">
-            <h1>Pop It Pro</h1>
-            <p class="product-price">7,99 &euro;</p>
+            <h1 id="product-title">Pop It Pro</h1>
+
+            <p class="product-price" aria-label="Kaina 7 eurai 99 centai">7,99 &euro;</p>
 
             <p class="product-description">
               Spalvingas ir linksmas žaidimų pultelis, skirtas smagiam laisvalaikiui ir sensoriniam žaidimui. Puikiai
               tinka mažiems atradėjams, mėgstantiems spaudyti, tyrinėti ir lavinti smulkiąją motoriką.
             </p>
 
-            <ul class="product-features">
+            <ul class="product-features" aria-label="Produkto savybės">
               <li>Lavina smulkiąją motoriką</li>
               <li>Ryškios, vaikams patrauklios spalvos</li>
               <li>Tinka kasdieniam žaidimui</li>
               <li>Lengvas ir patogus laikyti</li>
             </ul>
 
-            <a class="buy-button" href="/shop/cart.html">Pirkti</a>
+            <a class="buy-button" href="/shop/cart.html" aria-label="Pirkti Pop It Pro"> Pirkti </a>
           </div>
         </div>
       </section>
