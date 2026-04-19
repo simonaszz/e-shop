@@ -362,7 +362,8 @@ header .wrapper {
     transform 0.2s ease;
 }
 
-.products-grid article a:last-of-type:hover {
+.products-grid article a:last-of-type:hover,
+.hero a:hover {
   background-color: #e9772f;
   transform: scale(1.02);
 }
