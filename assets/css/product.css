@@ -95,9 +95,3 @@
     font-size: var(--fs-section-title);
   }
 }
-
-@media (min-width: 1024px) {
-  .product-content h1 {
-    font-size: var(--fs-page-title-lg);
-  }
-}
