@@ -139,10 +139,6 @@
 }
 
 @media (min-width: 1024px) {
-  .cart h1 {
-    font-size: var(--fs-page-title-lg);
-  }
-
   .cart-item img {
     inline-size: 160px;
   }
